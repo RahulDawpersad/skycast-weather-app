@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="public/css/module.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/655b3b7e45.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- PreLoader -->
+    <div class="wrapper">
+      <div class="container">
+        <div class="cloud front">
+          <span class="left-front"></span>
+          <span class="right-front"></span>
+        </div>
+        <span class="sun sunshine"></span>
+        <span class="sun"></span>
+        <div class="cloud back">
+          <span class="left-back"></span>
+          <span class="right-back"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <form id="weatherForm">
+        <h1>SkyCast Weather App</h1>
+        <!-- <label for="cityInput">Enter City:</label> -->
+        <input type="text" id="cityInput" placeholder="Enter City" required />
+        <button type="submit">Get Weather</button>
+        <span id="refreshIcon" onclick="refreshWeather()">
+          <i class="fa-solid fa-rotate"></i>
+        </span>
+      </form>
+      <div class="weather-description">
+        <div id="weatherData" class="weatherData"></div>
+      </div>
+    </div>
+    <!-- Link to Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="public/js/main.js"></script>
+  </body>
+</html>
